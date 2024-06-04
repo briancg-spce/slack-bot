@@ -34,6 +34,9 @@ def setup_directory(dir_path):
 setup_directory(INSTALLATIONS_DIR)
 setup_directory(STATES_DIR)
 
+# Set up logging
+logging.basicConfig(level=logging.DEBUG)
+
 # OAuth settings and app initialization
 redirect_uri = f"{REDIRECT_URI_BASE}/slack/oauth_redirect"
 
@@ -117,4 +120,5 @@ def hello_world():
 
 # Run the app on Waitress server
 if __name__ == "__main__":
-  serve(flask_app, host='0.0.0.0', port=88)
+  port = int(os.environ.get('PORT', 88))
+  serve(flask_app, host='0.0.0.0', port=port)
