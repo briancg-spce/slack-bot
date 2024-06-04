@@ -1,19 +1,19 @@
 services:
-  - type: web
-    name: slack-bot
-    env: python
-    buildCommand: poetry install --no-root
-    startCommand: poetry run python main.py
-    envVars:
-      - key: CLIENT_ID
-        value: ${{ CLIENT_ID }}
-      - key: CLIENT_SECRET
-        value: ${{ CLIENT_SECRET }}
-      - key: SIGNING_SECRET
-        value: ${{ SIGNING_SECRET }}
-      - key: SLACK_TOKEN
-        value: ${{ SLACK_TOKEN }}
-      - key: API_ENDPOINT
-        value: ${{ API_ENDPOINT }}
-      - key: REDIRECT_URI_BASE
-        value: ${{ REDIRECT_URI_BASE }}
+- type: web
+  name: slack-bot
+  env: python
+  buildCommand: poetry install --no-root
+  startCommand: poetry run python main.py
+  envVars:
+    - key: CLIENT_ID
+      value: ${{ CLIENT_ID }}
+    - key: CLIENT_SECRET
+      value: ${{ CLIENT_SECRET }}
+    - key: SIGNING_SECRET
+      value: ${{ SIGNING_SECRET }}
+    - key: SLACK_TOKEN
+      value: ${{ SLACK_TOKEN }}
+    - key: API_ENDPOINT
+      value: ${{ API_ENDPOINT }}
+    - key: REDIRECT_URI_BASE
+      value: ${{ REDIRECT_URI_BASE }}
