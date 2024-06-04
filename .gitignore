@@ -1,0 +1,20 @@
+# Ignorar las carpetas installations y states
+data/installations/
+data/states/
+
+# Ignorar archivos y carpetas específicos de Replit
+.replit
+.repl
+*.repl
+replit.nix
+.cache/
+.config/
+.upm/
+
+# Ignorar entornos virtuales
+venv/
+*.pyc
+__pycache__/
+
+# Ignorar archivos de breakpoints
+.breakpoints
