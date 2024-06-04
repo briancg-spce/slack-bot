@@ -1,23 +1,16 @@
 [tool.poetry]
 name = "python-template"
 version = "0.1.0"
-description = ""
+description = "A Slack bot for handling messages"
 authors = ["Brian CG <briancg.lab@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.10.0,<3.12.0"
-numpy = "^1.22.2"
-replit = "^3.2.4"
-Flask = "^2.2.0"
-urllib3 = "^1.26.12"
-slack-sdk = "^3.21.0"
-waitress = "^2.1.2"
+python = ">=3.10.0,<3.12"
+flask = "^2.2.2"
 requests = "^2.32.3"
+slack-sdk = "^3.27.2"
 slack-bolt = "^1.18.1"
-
-[tool.poetry.dev-dependencies]
-debugpy = "^1.6.2"
-replit-python-lsp-server = {extras = ["yapf", "rope", "pyflakes"], version = "^1.5.9"}
+waitress = "^2.1.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
