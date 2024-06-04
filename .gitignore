@@ -1,6 +1,9 @@
-# Ignorar las carpetas installations y states
-data/installations/
-data/states/
+# Ignorar todo en estas carpetas excepto los archivos .gitkeep
+data/installations/*
+!data/installations/.gitkeep
+data/states/*
+!data/states/.gitkeep
+
 
 # Ignorar archivos y carpetas específicos de Replit
 .replit
