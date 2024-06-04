@@ -11,8 +11,8 @@ from waitress import serve
 import requests
 
 # Define constants
-INSTALLATIONS_DIR = './data/installations/'
-STATES_DIR = './data/states/'
+INSTALLATIONS_DIR = './data/installations'
+STATES_DIR = './data/states'
 CLIENT_ID = os.environ["CLIENT_ID"]
 CLIENT_SECRET = os.environ["CLIENT_SECRET"]
 SIGNING_SECRET = os.environ["SIGNING_SECRET"]
@@ -120,5 +120,5 @@ def hello_world():
 
 # Run the app on Waitress server
 if __name__ == "__main__":
-  port = int(os.environ.get('PORT', 88))
+  port = int(os.environ.get('PORT', 10000))
   serve(flask_app, host='0.0.0.0', port=port)
