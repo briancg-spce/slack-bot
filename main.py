@@ -45,7 +45,9 @@ oauth_settings = OAuthSettings(
   client_secret=CLIENT_SECRET,
   scopes=[
     "chat:write", "im:write", "im:history", "chat:write.public", "commands",
-    "im:read"
+    "im:read", "channels:join", "channels:read", "channels:write", 
+    "channels:write.public", "channels:write.topic", "chat:write.customize",
+    "groups:read", "groups:write"
   ],
   installation_store=FileInstallationStore(base_dir=INSTALLATIONS_DIR),
   state_store=FileOAuthStateStore(expiration_seconds=600, base_dir=STATES_DIR),
