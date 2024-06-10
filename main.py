@@ -45,7 +45,7 @@ oauth_settings = OAuthSettings(
   client_secret=CLIENT_SECRET,
   scopes=[
     "chat:write", "im:write", "im:history", "chat:write.public", "commands",
-    "im:read", "channels:join", "channels:read", "channels:write", 
+    "im:read", "channels:join", "channels:read", 
     "channels:write.public", "channels:write.topic", "chat:write.customize",
     "groups:read", "groups:write"
   ],
